@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Ping Pong Game</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div class="controls">
+            <button onclick="startGame()">Start</button>
+            <button onclick="pauseGame()">Pause</button>
+            <button onclick="resetGame()">Reset</button>
+        </div>
+        <!--Mobile-Controls-->
+        <div class="mobile-controls">
+            <button id="upBtn">⬆️ Up</button>
+            <button id="downBtn">⬇️ Down</button>
+        </div>
+        <!--PC-Controls-->
+        <div class="pc-controls">
+            <button>W</button>
+            <button>A</button>
+            <button>S</button>
+            <button>D</button>
+        </div>
+        <!--Score Board-->
+        <div>
+            <span>Player 1: <span id="score1">0</span></span>
+            <span>Player 2: <span id="score2">0</span></span>
+        </div>
+    </div>
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
